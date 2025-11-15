@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Quiz • WordWave</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="lesson-body">
+
+    <header class="lesson-header">
+        <h2 class="logo">WordWave</h2>
+        <a href="index.html" class="back-btn">← Back</a>
+    </header>
+
+    <section class="lesson-container">
+        <h1 class="lesson-title">Vocabulary Quiz</h1>
+        <p class="lesson-desc">Choose the correct answers below.</p>
+
+        <div class="quiz-container">
+
+            <div class="quiz-question">
+                <h3>1. What does "Elegant" mean?</h3>
+                <label><input type="radio" name="q1" value="correct"> Stylish & graceful</label>
+                <label><input type="radio" name="q1" value="wrong"> Slow & boring</label>
+                <label><input type="radio" name="q1" value="wrong"> Expensive</label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>2. Meaning of "Inevitable"?</h3>
+                <label><input type="radio" name="q2" value="wrong"> Uncertain</label>
+                <label><input type="radio" name="q2" value="correct"> Guaranteed to happen</label>
+                <label><input type="radio" name="q2" value="wrong"> Dangerous</label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>3. Meaning of "Accurate"?</h3>
+                <label><input type="radio" name="q3" value="correct"> Correct and exact</label>
+                <label><input type="radio" name="q3" value="wrong"> Half true</label>
+                <label><input type="radio" name="q3" value="wrong"> Repeated</label>
+            </div>
+
+            <button onclick="submitQuiz()" class="neon-btn full-btn">Submit Quiz</button>
+
+            <div class="quiz-result"></div>
+
+        </div>
+
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
