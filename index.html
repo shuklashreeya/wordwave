@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WordWave — Neon</title>
+
+  <!-- link to the neon theme css (must be in css/style.css) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- small meta for mobile theme color -->
+  <meta name="theme-color" content="#1b0426">
+</head>
+<body id="page-home" class="neon-bg">
+
+  <!-- TOPBAR -->
+  <header class="topbar neon-top">
+    <div class="brand">
+      <a href="index.html" class="brand-link">
+        <span class="logo">WW</span>
+        <span class="brand-text">WordWave</span>
+      </a>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="lessons/vocabulary.html" class="nav-link">Lessons</a>
+      <a href="quizzes/index.html" class="nav-link">Quizzes</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a id="authLink" href="login.html" class="nav-link">Login</a>
+    </nav>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="menu">≡</button>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero container">
+    <div class="hero-left card-glass">
+      <div class="kicker">NEON • Cyber • Learning</div>
+      <h1 class="hero-title">WordWave</h1>
+      <p class="hero-sub">Learn English with neon-flavored lessons, interactive flashcards and futuristic quizzes.</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="lessons/vocabulary.html">Start Lessons</a>
+        <a class="btn btn-outline" href="quizzes/index.html">Take Quick Quiz</a>
+      </div>
+
+      <div class="hero-cards">
+        <div class="mini-card">
+          <div class="mini-num" id="statUsers">0</div>
+          <div class="mini-label">Demo users</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-num" id="statQuizzes">0</div>
+          <div class="mini-label">Quizzes ready</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-num" id="statWords">0</div>
+          <div class="mini-label">Words</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="card-glow card-cta">
+        <h3 class="card-title">Daily Neon Drill</h3>
+        <p class="muted">3 quick vocab questions — powered by client-side logic.</p>
+        <div class="drill-row">
+          <button class="btn small" onclick="location.href='quizzes/index.html'">Start Now</button>
+          <button class="btn small outline" onclick="location.href='lessons/vocabulary.html'">Flashcards</button>
+        </div>
+      </div>
+
+      <div class="card-glow card-info">
+        <h4>Pronunciation</h4>
+        <p class="muted">Use the Pronunciation trainer (SpeechSynthesis) to hear words in a clear voice.</p>
+        <a class="link-ghost" href="lessons/pronunciation.html">Open Trainer →</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FEATURES -->
+  <section class="features container">
+    <h2 class="section-title">Core Modules</h2>
+    <div class="grid">
+      <article class="feature neon-card">
+        <h3>Vocabulary</h3>
+        <p>Flashcards, examples and quick retention drills.</p>
+        <a href="lessons/vocabulary.html" class="feature-link">Open</a>
+      </article>
+
+      <article class="feature neon-card">
+        <h3>Grammar</h3>
+        <p>Short lessons, clear examples, mini-exercises.</p>
+        <a href="lessons/grammar.html" class="feature-link">Open</a>
+      </article>
+
+      <article class="feature neon-card">
+        <h3>Pronunciation</h3>
+        <p>Listen & repeat — real-time speech synthesis.</p>
+        <a href="lessons/pronunciation.html" class="feature-link">Open</a>
+      </article>
+
+      <article class="feature neon-card">
+        <h3>Quizzes</h3>
+        <p>Instant feedback, saved progress (local), fun interface.</p>
+        <a href="quizzes/index.html" class="feature-link">Open</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+    <div>© 2025 WordWave</div>
+    <div class="footer-links">
+      <a href="about.html" class="footer-link">About</a>
+      <a href="login.html" class="footer-link">Login</a>
+    </div>
+  </footer>
+
+  <!-- core client script (must be at js/main.js) -->
+  <script src="js/main.js"></script>
+</body>
+</html>
