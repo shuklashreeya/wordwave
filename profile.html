@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile • WordWave</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lesson-body">
+
+    <header class="lesson-header">
+        <h2 class="logo">WordWave</h2>
+        <a href="dashboard.html" class="back-btn">← Back</a>
+    </header>
+
+    <section class="lesson-container">
+        <h1 class="lesson-title">Your Profile</h1>
+        <p class="lesson-desc">Track your progress & achievements.</p>
+
+        <div class="profile-card">
+            <img src="https://i.imgur.com/4Z7bFYT.png" class="profile-img" alt="User">
+
+            <h2 class="profile-name">Student User</h2>
+            <p class="profile-tag">@wordwave_learner</p>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>Lessons Completed</h3>
+                    <p id="lessonsCount">0</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Quizzes Attempted</h3>
+                    <p id="quizCount">0</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Accuracy</h3>
+                    <p id="accuracyPercent">0%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-section">
+            <h2 class="progress-title">Skill Progress</h2>
+
+            <div class="progress-bar">
+                <span id="vocabProgress"></span>
+            </div>
+            <p>Vocabulary</p>
+
+            <div class="progress-bar">
+                <span id="grammarProgress"></span>
+            </div>
+            <p>Grammar</p>
+
+            <div class="progress-bar">
+                <span id="pronProgress"></span>
+            </div>
+            <p>Pronunciation</p>
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
