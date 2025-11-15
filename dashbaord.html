@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard • WordWave</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- Top Navigation -->
+    <header class="dashboard-header">
+        <h2 class="logo">WordWave</h2>
+
+        <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="mobile-nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="lessons/vocabulary.html">Vocabulary</a>
+            <a href="lessons/grammar.html">Grammar</a>
+            <a href="lessons/pronunciation.html">Pronunciation</a>
+            <a href="quizzes/index.html">Quizzes</a>
+            <a href="login.html" onclick="localStorage.removeItem('loggedIn')">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Dashboard Title -->
+    <section class="dash-welcome">
+        <h1>Welcome to <span>WordWave</span></h1>
+        <p>Master English with futuristic lessons & interactive quizzes.</p>
+    </section>
+
+    <!-- Card Grid -->
+    <section class="dash-grid">
+
+        <a href="lessons/vocabulary.html" class="dash-card">
+            <h3>Vocabulary Builder</h3>
+            <p>Learn new words with examples & meanings.</p>
+        </a>
+
+        <a href="lessons/grammar.html" class="dash-card">
+            <h3>Grammar Lessons</h3>
+            <p>Rules made simple with explanations.</p>
+        </a>
+
+        <a href="lessons/pronunciation.html" class="dash-card">
+            <h3>Pronunciation Guide</h3>
+            <p>Improve accent & speak confidently.</p>
+        </a>
+
+        <a href="quizzes/index.html" class="dash-card">
+            <h3>Quizzes</h3>
+            <p>Test your skills & track your progress.</p>
+        </a>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
