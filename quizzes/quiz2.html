@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Quiz • WordWave</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="lesson-body">
+
+    <header class="lesson-header">
+        <h2 class="logo">WordWave</h2>
+        <a href="index.html" class="back-btn">← Back</a>
+    </header>
+
+    <section class="lesson-container">
+        <h1 class="lesson-title">Grammar Quiz</h1>
+        <p class="lesson-desc">Select the correct answer for each question.</p>
+
+        <div class="quiz-container">
+
+            <div class="quiz-question">
+                <h3>1. Choose the correct sentence:</h3>
+                <label><input type="radio" name="q1" value="wrong"> She don’t like coffee.</label>
+                <label><input type="radio" name="q1" value="correct"> She doesn’t like coffee.</label>
+                <label><input type="radio" name="q1" value="wrong"> She aren’t liking coffee.</label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>2. Pick the correct form:</h3>
+                <label><input type="radio" name="q2" value="wrong"> They was happy.</label>
+                <label><input type="radio" name="q2" value="correct"> They were happy.</label>
+                <label><input type="radio" name="q2" value="wrong"> They is happy.</label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>3. Identify the correct option:</h3>
+                <label><input type="radio" name="q3" value="wrong"> I am going to home.</label>
+                <label><input type="radio" name="q3" value="correct"> I am going home.</label>
+                <label><input type="radio" name="q3" value="wrong"> I going home.</label>
+            </div>
+
+            <button onclick="submitQuiz()" class="neon-btn full-btn">Submit Quiz</button>
+
+            <div class="quiz-result"></div>
+        </div>
+
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
