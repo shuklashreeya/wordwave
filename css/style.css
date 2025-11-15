@@ -1,0 +1,371 @@
+/* --------------------------------------------------
+   NEON CYBER GLOW THEME — DARK PURPLE BASE
+   -------------------------------------------------- */
+
+:root {
+  --bg-dark: #120018;
+  --bg-card: rgba(255, 255, 255, 0.06);
+  --bg-glass: rgba(255, 255, 255, 0.12);
+
+  --purple: #b765ff;
+  --purple-neon: #d974ff;
+  --hotpink: #ff3ead;
+  --neon-blue: #5c7aff;
+
+  --text-main: #fff;
+  --text-dim: #d2bade;
+
+  --radius: 18px;
+  --shadow-neon: 0 0 12px var(--purple-neon), 0 0 24px var(--purple);
+}
+
+/* GLOBALS ------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neon-blue);
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--hotpink);
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* TOPBAR -------------------------------------------------- */
+
+.topbar {
+  width: 100%;
+  padding: 18px 5%;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  background: var(--purple-neon);
+  color: #000;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  box-shadow: var(--shadow-neon);
+}
+
+.brand-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  gap: 26px;
+}
+
+.nav-link {
+  color: var(--text-dim);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--hotpink);
+  text-shadow: 0 0 6px var(--hotpink);
+}
+
+.active {
+  color: var(--purple-neon);
+  text-shadow: var(--shadow-neon);
+}
+
+/* MOBILE MENU */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--text-main);
+}
+
+/* HERO SECTION -------------------------------------------- */
+
+.hero {
+  display: flex;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1.1;
+  padding: 35px;
+  border-radius: var(--radius);
+  background: var(--bg-glass);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 40px rgba(188, 77, 255, 0.2);
+}
+
+.kicker {
+  color: var(--text-dim);
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-top: 12px;
+  background: linear-gradient(45deg, var(--purple-neon), var(--hotpink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  max-width: 460px;
+}
+
+.hero-cta {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: 0.25s;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--purple);
+  color: #000;
+  box-shadow: var(--shadow-neon);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--hotpink);
+  color: var(--hotpink);
+}
+
+.btn-outline:hover {
+  background: var(--hotpink);
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.card-glow {
+  background: var(--bg-glass);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0 24px rgba(207, 70, 255, 0.25);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.card-info {
+  margin-top: 30px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.muted {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.link-ghost {
+  color: var(--purple-neon);
+}
+
+.link-ghost:hover {
+  color: var(--hotpink);
+}
+
+.mini-card {
+  background: var(--bg-glass);
+  border-radius: var(--radius);
+  padding: 14px;
+  text-align: center;
+  width: 110px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.mini-num {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, var(--purple), var(--hotpink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mini-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/* FEATURE GRID -------------------------------------------- */
+
+.features {
+  padding-bottom: 80px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.neon-card {
+  padding: 30px;
+  border-radius: var(--radius);
+  background: var(--bg-glass);
+  box-shadow: 0 0 22px rgba(177, 61, 255, 0.25);
+  transition: 0.3s;
+}
+
+.neon-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255, 0, 140, 0.4);
+}
+
+.feature-link {
+  display: block;
+  margin-top: 16px;
+  color: var(--purple-neon);
+  font-weight: 600;
+}
+
+.feature-link:hover {
+  color: var(--hotpink);
+}
+
+/* FORMS (login/signup) ------------------------------------ */
+
+.form-card {
+  width: 90%;
+  max-width: 430px;
+  margin: 110px auto;
+  padding: 35px;
+  background: var(--bg-glass);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-neon);
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: var(--text-dim);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+/* DASHBOARD ------------------------------------------------ */
+
+.dashboard-container {
+  padding-top: 70px;
+}
+
+.dash-grid {
+  margin-top: 40px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.dash-card {
+  padding: 25px;
+  border-radius: var(--radius);
+  background: var(--bg-glass);
+  box-shadow: 0 0 20px rgba(207, 70, 255, 0.25);
+  transition: 0.3s;
+}
+
+.dash-card:hover {
+  transform: translateY(-4px);
+}
+
+/* MEDIA QUERIES ------------------------------------------- */
+
+@media (max-width: 780px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background: rgba(0, 0, 0, 0.
